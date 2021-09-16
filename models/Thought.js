@@ -51,8 +51,8 @@ const ThoughtSchema = new Schema (
   },
   {
     toJSON: {
-      virtuals: true,
-      getters: true
+      getters: true,
+      virtuals: true      
     },
    id: false
   }

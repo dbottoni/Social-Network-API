@@ -16,8 +16,8 @@ const UserSchema = new Schema (
         validator(validEmail) {
           return /.+@.+\..+/.test(validEmail);
         },
-        message: 'Please enter a valid email address'
-      }
+          message: 'Please enter a valid email address'
+        }
     },
     thoughts: [
       {
