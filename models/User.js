@@ -13,7 +13,7 @@ const UserSchema = new Schema (
       unique: true,
       required: true,
       validate: {
-        validator: (validEmail){
+        validator(validEmail) {
           return /.+@.+\..+/.test(validEmail);
         },
         message: 'Please enter a valid email address'
