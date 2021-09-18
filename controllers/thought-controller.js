@@ -15,7 +15,6 @@ const thoughtController = {
           res.sendStatus(400);
         });
     },
-
     getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.id })
       .populate({
@@ -60,7 +59,7 @@ const thoughtController = {
       })
       .catch(err => res.json(err));
   },
-// delete thought function borrowed from Spencer Berkebile
+  // delete thought function borrowed from Spencer Berkebile
       deleteThought({ params }, res) {
         Thought.findOneAndDelete({ _id: params.id })
         .then(dbThoughtData => {
